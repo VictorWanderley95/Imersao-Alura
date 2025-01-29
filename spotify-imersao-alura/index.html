@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotify Imersão</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="src/styles/reset.css">
+  <link rel="stylesheet" href="src/styles/vars.css">
+  <link rel="stylesheet" href="src/styles/sidebar-footer.css">
+  <link rel="stylesheet" href="src/styles/main-content.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" />
 </head>
@@ -17,7 +19,7 @@
       <div>
         <div class="logo">
           <a href="">
-            <img src="./assets/icons/logo-spotify.png" alt="Logo do Spotify">
+            <img src="src/icons/logo-spotify.png" alt="Logo do Spotify">
           </a>
         </div>
         <ul>
@@ -70,6 +72,33 @@
     </div>
 
   </div>
+
+  <main>
+    <div class="main_container">
+      <nav class="header_navigation">
+        <div class="navigation">
+          <button class="arrow_left">
+            <img src="src/icons/small-left.png" alt="Seta a esquerda">
+          </button>
+          <button class="arrow_right">
+            <img src="src/icons/small-right.png" alt="Seta a direita">
+          </button>
+          <div class="header_search">
+            <img src="src/icons/search.png" alt="">
+            <input id="search_input" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+          </div>
+
+          <div class="header_login">
+            <button class="subscribe">Inscreve-se</button>
+            <button class="login">Entrar</button>
+          </div>
+        </div>
+
+      </nav>
+
+    </div>
+  </main>
+
 </body>
 
 </html>
